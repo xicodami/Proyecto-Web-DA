@@ -2,7 +2,34 @@
     margin: 0px;
     padding: 0px;
 }
+header, nav, section, aside, footer{
+    display: block;
+}
 header{
     background: black;
     padding: 15px;
+}
+div{
+    text-align: center;
+    width: 75%;
+}
+.menu{
+    border: 1px solid white;
+}
+.menu li{
+    border: 1px solid white;
+    list-style: none;
+    display: inline-block;
+}
+section{
+    background: green;
+}
+aside{
+    background: purple;
+}
+.PiePagina{
+    background: orange;
+}
+.PieArticulo{
+    background: red;
 }
