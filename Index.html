@@ -13,70 +13,140 @@
     <meta name="Keywords" content="Progrmacion, Diseño Web, GestorDocumental, Gestores, Software" />
 </head>
 <body>
+<center>
     <div>
-        <header>
-            <img src="Imagenes/LOGO.png" alt="LogoDAcorporation" width="5%">
+        <header >
+           <a href="Index.html"><img src="Imagenes/LOGO.png" alt="LogoDAcorporation" width="8%"></a>
+            <br>
+            <br>
             <nav class="menu">
                 <ul>
-                    <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="Nosotros.html">Nosotros</a></li>
-                        <ul>
-                            <li>Mision</li>
-                            <li>Vision</li>
-                            <li>Valores</li>
-                        </ul>
-                    <li><a href="Login.html">Login</a></li>
+                    <li> <a href="Index.html"> <img src="imagenes/BOTONES/INICIO.png" width="70px"</li></a>
+                    <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>
+                    <li> <a href="Nosotros.html"><img src="imagenes/BOTONES/nosotros.png" width="130px"</li></a>
+                    <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>       
+                    <li> <a href="Login.html"><img src="imagenes/BOTONES/login.png" width="70px"</li></a>
+                    <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>
+                    <li> <a href="#ffff"><img src="imagenes/BOTONES/contactenos.png" width="160px"</li></a>
                 </ul>
             </nav>
         </header>
         <section>
-            <article>
+            <article style="color: aliceblue;">
                 <hgroup>
-                    <h2>Gestion documental</h2>
-                    <h3>Para tu empresa especializada en leyes</h3>
+                    <h2 style="color: aliceblue;">GESTION DOCUMENTAL</h2>
+                    <br>
+                    <h3 style="color: aliceblue;">Para todas la empresas que aún manenjen archivos en fisico</h3>
                     <br>
                 </hgroup>
                 <p>Hoy en dia todos las leyes las podemos encontrar en <b>TODOS LADOS</b> desde la casa hasta la oficina, por las calles de la ciudad o por las carretes fuera de ellas, <b>AQUI</b> encontrara la forma de digitalizar y asegurar todos sus documentos, para poder compartirlos con todo tu equipo de trabajo esten donde esten y asi mejorar su eficiencia y productividad.</p>
                 <br>
+                <br>
                 <footer class="PieArticulo"><b>YA NO MAS CASOS PERDIDOS</b></footer>
+                <br>    
             </article>
         </section>
         <br>
         <section>
-            <hgroup>
+            <hgroup style="color: aliceblue;">
                 <h2>Ayuda a tus clientes, empleados y al medio ambiente</h2>
                 <br>
                 <h3>D A FILE MANAGER</h3>
-                <img src="Imagenes/LogoPrograma.png" alt="D A FILEMANAGER LOGO">
+                <br>
+                <img src="Imagenes/LogoPrograma.png" width="26%" alt="D A FILEMANAGER LOGO">
             </hgroup>
-            <p>En D A Corporation sabemos lo importante que es tenerle orden y que esten dispuesto los archivos y documentos que se nesecitan.</p>
+            <p color="white">En D A Corporation sabemos lo importante que es tenerle orden y que esten dispuesto los archivos y documentos que se nesecitan.</p>
             <p>De esta nesecidad nacio D A FILE MANAGER, un gestor documental que les bridara a usted y su empresa una nueva y mejor forma de organizar, proteger y gestionar todos sus archivos. </p>
         </section>
-        <aside>
-            <form action="get">
-                <hgroup><h2>Contactanos</h2></hgroup>
-                Nombres: <input type="text" name="Nombres">
-                Numero de contacto: <input type="text" name="NumeroContacto">
+        
+        <aside id="ffff"> <center>
+            <head> 
+                <title>Formulario Contactanos.</title> 
+                
+                <style type="text/css">  
+                
+                
+                
                 <br>
-                Correo Electronico: <input type="email" name="CorreoElectronico">
-                Pais: <select name="Pais" id="DondeEsta">
-                    <option value="1">Argentina</option>
-                    <option value="2">Venezuela</option>
-                    <option value="3">Colombia</option>
-                    <option value="4">Chile</option>
-                    <option value="5">Peru</option>
+                </style> 
+                
+                </head> 
+                
+                <body> 
+                
+                <div id="formul">
+                
+                    <h2 style="color: aliceblue;">CONTACTENOS</h2>
+                
+                    <form method="POST" action="mensaje.php" name="mensaje_f" enctype="multipart/form-data" style="color: #ffffff;"> 
+                     
+                        <p>Nombre: <br /> 
+                        <input class="campos" type="text" name="nombre"></p>
+                        <p>Pais<br/>    
+                <select  name = "Pais" calss="campos">
+                    < option  value = " 1 " > Argentina </ option >
+                    < option  value = " 2 " > Venezuela </ option >
+                    < option  value = " 3 " > Colombia </ option >
+                    < option  value = " 4 " > Chile </ option >
+                    < option  value = " 5 " > Perú </ option >
                 </select>
-                <br>
-                Dejanos tu mensaje
-                <br>
-                <textarea name="MensajeCliente" id="MensajeCliente" cols="40" rows="15"></textarea><br>
-                <input type="button" value="Enviar" name="Enviar">
-            </form>
-        </aside>
-        <footer class="PiePagina">
+
+
+
+
+
+                        <p>E-Mail: <br /> 
+                        <input class="campos" type="text" name="email"></p> 
+                        
+                        <p>Asunto: <br /> 
+                        <input class="campos" type="text" name="asunto"></p> 
+                        
+                        <p>Mensaje:<br /> 
+                        <textarea class="campos" rows="10" name="mensaje"></textarea></p> 
+                        
+                        <p>Adjuntar archivo: <br />
+                        <input class="campos" type="file" name="archivo" size="20"></p>
+                        
+                        <input type="hidden" name="id" value="">
+                        
+                        <br>
+                        <br>   
+                         
+                        <div id="b_reset"> 
+                        <input class="boton" type="reset" value="Restablecer" name="B2">
+                        </div>
+                        
+                        <div id="b_submit">
+                        <input class="boton" type="submit" value="Enviar mensaje" name="B1">
+                        </div>
+                             
+                    </form> 
+                
+                </div>    
+                    
+                </body>    
+            </head>  
+            </center>      
+
+
+
+
+
+        </aside>      
+                
+
+
+        <footer style="color: aliceblue;" class="PiePagina">
+            <br>
+            <br>
+            <br>            
             Derechos de autor<br>
-            Fechas de actualizacion: 12 de Junio del 2021<br> 
+            Fechas de actualizacion: 12 de Junio del 2021<br>
+            <br>
+            <br>
+            <br 
         </footer>
     </div>
+
 </body>
 </html>
