@@ -13,30 +13,23 @@
     <meta name="Keywords" content="Progrmacion, Diseño Web, GestorDocumental, Gestores, Software" />
 </head>
 <body>
-<center>
-    <div>
-        <header >
+    <div class="Agrupar">
+        <header>
            <a href="Index.html"><img src="Imagenes/LOGO.png" alt="LogoDAcorporation" width="8%"></a>
-            <br>
-            <br>
             <nav class="menu">
                 <ul>
-                    <li> <a href="Index.html"> <img src="imagenes/BOTONES/INICIO.png" width="70px"</li></a>
-                    <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>
-                    <li> <a href="Nosotros.html"><img src="imagenes/BOTONES/nosotros.png" width="130px"</li></a>
-                    <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>       
-                    <li> <a href="Login.html"><img src="imagenes/BOTONES/login.png" width="70px"</li></a>
-                    <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>
-                    <li> <a href="#ffff"><img src="imagenes/BOTONES/contactenos.png" width="160px"</li></a>
+                    <li> <a href="Index.html"> <img src="imagenes/BOTONES/INICIO.png" width="70px"></li></a>
+                    <li> <a href="Nosotros.html"><img src="imagenes/BOTONES/nosotros.png" width="130px"></li></a>     
+                    <li> <a href="Login.html"><img src="imagenes/BOTONES/login.png" width="70px"></li></a>
                 </ul>
             </nav>
         </header>
-        <section>
+        <section class="relleno">
             <article style="color: aliceblue;">
                 <hgroup>
-                    <h2 style="color: aliceblue;">GESTION DOCUMENTAL</h2>
+                    <h2>GESTION DOCUMENTAL</h2>
                     <br>
-                    <h3 style="color: aliceblue;">Para todas la empresas que aún manenjen archivos en fisico</h3>
+                    <h3>Para todas la empresas que aún manenjen archivos en fisico</h3>
                     <br>
                 </hgroup>
                 <p>Hoy en dia todos las leyes las podemos encontrar en <b>TODOS LADOS</b> desde la casa hasta la oficina, por las calles de la ciudad o por las carretes fuera de ellas, <b>AQUI</b> encontrara la forma de digitalizar y asegurar todos sus documentos, para poder compartirlos con todo tu equipo de trabajo esten donde esten y asi mejorar su eficiencia y productividad.</p>
@@ -45,56 +38,33 @@
                 <footer class="PieArticulo"><b>YA NO MAS CASOS PERDIDOS</b></footer>
                 <br>    
             </article>
-        </section>
-        <br>
-        <section>
-            <hgroup style="color: aliceblue;">
-                <h2>Ayuda a tus clientes, empleados y al medio ambiente</h2>
-                <br>
-                <h3>D A FILE MANAGER</h3>
-                <br>
-                <img src="Imagenes/LogoPrograma.png" width="26%" alt="D A FILEMANAGER LOGO">
-            </hgroup>
-            <p color="white">En D A Corporation sabemos lo importante que es tenerle orden y que esten dispuesto los archivos y documentos que se nesecitan.</p>
-            <p>De esta nesecidad nacio D A FILE MANAGER, un gestor documental que les bridara a usted y su empresa una nueva y mejor forma de organizar, proteger y gestionar todos sus archivos. </p>
+            <article style="color: aliceblue;">
+                <hgroup style="color: aliceblue;">
+                    <h2>Ayuda a tus clientes, empleados y al medio ambiente</h2>
+                    <br>
+                    <h3>D A FILE MANAGER</h3>
+                    <br>
+                    <img src="Imagenes/LogoPrograma.png" width="26%" alt="D A FILEMANAGER LOGO">
+                </hgroup>
+                <p color="white">En D A Corporation sabemos lo importante que es tenerle orden y que esten dispuesto los archivos y documentos que se nesecitan.</p>
+                <p>De esta nesecidad nacio D A FILE MANAGER, un gestor documental que les bridara a usted y su empresa una nueva y mejor forma de organizar, proteger y gestionar todos sus archivos. </p>
+            </article>
         </section>
         
-        <aside id="ffff"> <center>
-            <head> 
-                <title>Formulario Contactanos.</title> 
-                
-                <style type="text/css">  
-                
-                
-                
-                <br>
-                </style> 
-                
-                </head> 
-                
-                <body> 
-                
-                <div id="formul">
-                
-                    <h2 style="color: aliceblue;">CONTACTENOS</h2>
-                
+        <aside id="formul">
+                <div id="formu">
+                    <h2><img src="imagenes/BOTONES/contactenos.png" width=80%></h2><br>
                     <form method="POST" action="mensaje.php" name="mensaje_f" enctype="multipart/form-data" style="color: #ffffff;"> 
                      
-                        <p>Nombre: <br /> 
+                        <p>Nombre: <br> 
                         <input class="campos" type="text" name="nombre"></p>
-                        <p>Pais<br/>    
-                <select  name = "Pais" calss="campos">
-                    < option  value = " 1 " > Argentina </ option >
-                    < option  value = " 2 " > Venezuela </ option >
-                    < option  value = " 3 " > Colombia </ option >
-                    < option  value = " 4 " > Chile </ option >
-                    < option  value = " 5 " > Perú </ option >
-                </select>
-
-
-
-
-
+                        <p>Pais<br>    
+                        <select  name = "Pais" class="campos">
+                            <option  value = " 1 " > Argentina </option>
+                            <option  value = " 3 " > Colombia </option>
+                            <option  value = " 4 " > Venezuela </option>
+                            <option  value = " 5 " > Perú </option>
+                        </select>
                         <p>E-Mail: <br /> 
                         <input class="campos" type="text" name="email"></p> 
                         
@@ -105,48 +75,20 @@
                         <textarea class="campos" rows="10" name="mensaje"></textarea></p> 
                         
                         <p>Adjuntar archivo: <br />
-                        <input class="campos" type="file" name="archivo" size="20"></p>
+                        <input class="campos" type="file" name="archivo" size="10"></p>
                         
                         <input type="hidden" name="id" value="">
-                        
-                        <br>
                         <br>   
-                         
-                        <div id="b_reset"> 
-                        <input class="boton" type="reset" value="Restablecer" name="B2">
-                        </div>
-                        
-                        <div id="b_submit">
-                        <input class="boton" type="submit" value="Enviar mensaje" name="B1">
-                        </div>
-                             
-                    </form> 
-                
-                </div>    
-                    
-                </body>    
-            </head>  
-            </center>      
-
-
-
-
-
-        </aside>      
-                
-
-
+                        <input class="boton" type="reset" value="Restablecer" name="B2" id="bReset">
+                        <input class="boton" type="submit" value="Enviar mensaje" name="B1" id="BSubmit">    
+                    </form>
+                </div>     
+        </aside>               
         <footer style="color: aliceblue;" class="PiePagina">
-            <br>
-            <br>
-            <br>            
+            <br>        
             Derechos de autor<br>
-            Fechas de actualizacion: 12 de Junio del 2021<br>
-            <br>
-            <br>
-            <br 
+            Fechas de actualizacion: 12 de Junio del 2021  <br>
         </footer>
     </div>
-
 </body>
 </html>
