@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+.Agrupar{
+    text-align: center;
+}
+header, nav, section, aside{
+    display: block;
+}
+#Logo{
+    margin-left: 2%;
+    width: 10%;
+    border-radius: 8px;
+    padding: 10px;
+    float: left;
+    background: #000;
+}
+nav{
+    float: left;
+    padding-top: 4.25%;
+    padding-bottom: 4.25%;
+    width: 85%;
+    border-radius: 8px;
+    background: #000;
+}
+.menu li{
+    padding: 8px;
+    margin-right: 6%;
+    border-radius: 4px;
+    border: 3px solid rgb(255, 255, 255);
+    list-style: none;
+    display: inline-block;
+}
+.relleno{
+    background: #000;
+}
+footer{
+    clear: both;
+    margin-top: 1%;
+    padding: 2%;
+    font-weight: bold;
+    background: black;
+}

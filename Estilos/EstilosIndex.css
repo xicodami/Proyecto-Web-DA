@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
 }
 .Agrupar{
     text-align: center;
@@ -9,9 +10,21 @@
 header, nav, section, aside{
     display: block;
 }
-header{
-    background: black;
-    padding: auto;
+#Logo{
+    margin-left: 2%;
+    width: 10%;
+    border-radius: 8px;
+    padding: 10px;
+    float: left;
+    background: #000;
+}
+nav{
+    float: left;
+    padding-top: 4.25%;
+    padding-bottom: 4.25%;
+    width: 85%;
+    border-radius: 8px;
+    background: #000;
 }
 .menu li{
     padding: 8px;
@@ -22,18 +35,17 @@ header{
     display: inline-block;
 }
 .relleno{
-    background: rgb(229, 255, 0);
     margin: 1%;
     width: 70%;
     float: left;
     padding: 5px;
 }
 article{
-    background: #540364;
     margin: 10px;
+    background: black;
+    border-radius: 10px;
 }
 .PieArticulo{
-    background: rgb(44, 17, 17);
     text-align: right;
     padding: 5px;
 }
@@ -51,11 +63,14 @@ aside{
     padding: auto;
     width: 80%;                  
     font-size:12pt;                 
-    color: #540364;
+    color: black;
     border-radius: 3px;                  
     border: 3px solid black;         
     background-color:#ffffff;      
-} 
+}
+option{
+    color: #000;
+}
 #bReset { 
     font-size: 11px;
     width: 35%;
@@ -75,10 +90,12 @@ aside{
     border: 8px solid #000;   
 }
 .PiePagina{
-    background: rgb(0, 255, 115);
     clear: both;
+    border-radius: 10px;
+    font-weight: bold;
     margin: 1%;
     height: 80px;
+    background: black;
 }
 aside p input, textarea, select{
     margin: 5px;
