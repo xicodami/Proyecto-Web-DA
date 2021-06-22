@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<center>   
 <html>
+ 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +17,25 @@
 <body>
     <div>
         <header>
-            <img src="Imagenes/LOGO.png" alt="LogoDAcorporation" width="5%">
+            <a href="Index.html"><img src="Imagenes/LOGO.png" alt="LogoDAcorporation" width="15%">
             <script src="Javita/Codigo.js"> </script>
             <nav>
-                <ul>
-                    <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="Nosotros.html">Nosotros</a></li>
-                        <ul>
-                            <li>Mision</li>
-                            <li>Vision</li>
-                            <li>Valores</li>
-                        </ul>
-                    <li><a href="Login.html">Login</a></li>
-                </ul>
+                <br>
+                <br>
+                <nav class="menu">
+                    <ul>
+                        <li> <a href="Index.html"> <img src="imagenes/BOTONES/INICIO.png" width="70px"</li></a>
+                        <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>
+                        <li> <a href="Nosotros.html"><img src="imagenes/BOTONES/nosotros.png" width="130px"</li></a>
+                        <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>       
+                        <li> <a href="Login.html"><img src="imagenes/BOTONES/login.png" width="70px"</li></a>
+                        <li> <img src="imagenes/BOTONES/spcio.png" width="40px"</li>
+                        <li> <a href="Proyecto-Web-DA/Login.html#ffff"><img src="imagenes/BOTONES/contactenos.png" width="160px"</li></a>
+                    </ul>
             </nav>
         </header>
         <section>
-            <form action="get">
+            <form action="get" style="color: blanchedalmond;">
                 <hgroup><h2>Registrate</h2></hgroup><br>
                 Nombres: <input type="text" name="Nombres" id="Nombres" placeholder="Nombre Completo">
                 Fecha de nacimiento: <input type="date" name="Nacimiento" id="Nacimiento"><br>
@@ -41,17 +45,27 @@
                 Confirmar contraseña: <input type="password" name="Contraseña2" id="Contraseña2" placeholder="Confirmar contraseña" >
             </form>
         </section>
-        <aside>
+        <aside style="color: blanchedalmond;">
             <form action="get">
                 <hgroup><h2>Inicia Sesión</h2></hgroup><br>
                 Email: <input type="email" id="EmailIngreso" name="EmailIngreso" placeholder="Correo Electronico"> <br>
                 Contraseña: <input type="Password" id="PasswordIngreso" name="PasswordIngreso" placeholder="Contraseña">
+                <div id="submit">
+                    <input class="boton" type="submit" value="Iniciar Sesión" name="B1">
+                    </div>    
+
+                <br>
+                <br>
+                <br>
+                <br>
             </form>
         </aside>
-        <footer>
+        <hr style="color: black;">
+        <footer class="PiePagina" style="color: aliceblue;">
             Derechos de autor<br>
             Fechas de actualizacion: 12 de Junio del 2021<br> 
         </footer>
     </div>
 </body>
 </html>
+<center>   
