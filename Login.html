@@ -26,39 +26,32 @@
                 </ul>
             </nav>
         </div>
-        </header>
-        <section>
-            <form action="get" style="color: blanchedalmond;">
-                <hgroup><h2>Registrate</h2></hgroup><br>
-                Nombres: <input type="text" name="Nombres" id="Nombres" placeholder="Nombre Completo">
-                Fecha de nacimiento: <input type="date" name="Nacimiento" id="Nacimiento"><br>
-                Email: <input type="email" name="EmailRegistro" id="EmailRegistro" placeholder="Correo Electronico">
-                Apodo: <input type="text" name="Apodo" id="Apodo" placeholder="Como quieres que te llamemos"><br>
-                Contraseña: <input type="password" name="Contraseña1" id="Contraseña1" placeholder="Contraseña">
-                Confirmar contraseña: <input type="password" name="Contraseña2" id="Contraseña2" placeholder="Confirmar contraseña" >
-            </form>
-        </section>
-        <aside style="color: blanchedalmond;">
-            <form action="get">
-                <hgroup><h2>Inicia Sesión</h2></hgroup><br>
-                Email: <input type="email" id="EmailIngreso" name="EmailIngreso" placeholder="Correo Electronico"> <br>
-                Contraseña: <input type="Password" id="PasswordIngreso" name="PasswordIngreso" placeholder="Contraseña">
-                <div id="submit">
-                    <input class="boton" type="submit" value="Iniciar Sesión" name="B1">
-                    </div>    
+        <div class="form-structor">
+            <div class="signup">
+                <h2 class="form-title" id="signup">Registrate</h2>
+                <div class="form-holder">
+                    <input type="text" class="input" placeholder="Tu Nombre" />
+                    <input type="email" class="input" placeholder="Tu Email" />
+                    <input type="password" class="input" placeholder="Tu Contraseña" />
+                </div>
+                <button class="submit-btn">Registrate</button>
+            </div>
+            <div class="login slide-up">
+                <div class="center">
+                    <h2 class="form-title" id="login"><span>o   </span>Ingresa aqui!!</h2>
+                    <div class="form-holder">
+                        <input type="email" class="input" placeholder="Usuario" />
+                        <input type="password" class="input" placeholder="Contraseña" />
+                    </div>
+                    <button class="submit-btn">Inicia sesión</button>
+                </div>
+            </div>
+        </div>
 
-                <br>
-                <br>
-                <br>
-                <br>
-            </form>
-        </aside>
-        <hr style="color: black;">
         <footer class="PiePagina" style="color: aliceblue;">
             Derechos de autor<br>
             Fechas de actualizacion: 12 de Junio del 2021<br> 
         </footer>
     </div>
-    </center>
 </body>
 </html>
